@@ -18,61 +18,67 @@
 
       <!-- section one contain navbar and titles and 2 buttons -->
       <section
-        class="flex flex-col items-center justify-between gap-4 bg-url bg-center bg-Lightred rounded-bl-3xl w-full h-[40%] text-White px-40">
-   
-        <nav class="flex items-center justify-between gap-10 p-8 w-full relative ">
+        class="flex flex-col items-start justify-between gap-4 bg-url bg-center bg-Lightred rounded-bl-3xl w-full h-[40%] text-White px-40">
+        <nav class="flex items-center justify-between  p-8 w-full relative">
           <!-- lists -->
           <div class="flex items-center justify-center gap-4 ">
             <img src="../public/images/logo.svg" alt="logo" class="mr-20">
 
-            <!-- Product lists -->
-            <ul class="flex items-center justify-center gap-2">
-              <span class="text-sm font-semibold">Product</span>
-              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
-              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
-              <ul class="hidden">
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </ul>
+            <div class="lg:flex hidden items-center justify-center gap-6 ">
 
-            <!-- Company -->
-            <ul class="flex items-center justify-center gap-2">
-              <span class="text-sm font-semibold">Company</span>
-              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
-              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
-              <ul class="hidden">
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
+
+              <!-- Product lists -->
+              <ul class="flex items-center justify-center gap-2">
+                <span class="text-sm hover:underline  font-semibold cursor-pointer " id="productclick">Product</span>
+                <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+                <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
+                <ul
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 mr-20  hidden " id="products">
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer ">Overview</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Pricing</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Marketplace</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Features</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Integrations</li>
+                </ul>
               </ul>
 
-            </ul>
+              <!-- Company -->
+              <ul class="flex items-center justify-center gap-2">
+                <span class="text-sm hover:underline cursor-pointer font-semibold " id="companyclick">Company</span>
+                <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+                <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
+                <ul
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-10 hidden " id="company">
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">About</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Team</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Blog</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Careers</li>
+                </ul>
 
-            <!-- Connect -->
-            <ul class="flex items-center justify-center gap-2">
-              <span class="text-sm font-semibold">Connect</span>
-              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
-              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
-              <ul class="hidden">
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
               </ul>
-            </ul>
 
+              <!-- Connect -->
+              <ul class="flex items-center justify-center gap-2">
+                <span class="text-sm hover:underline cursor-pointer font-semibold " id="connectclick">Connect</span>
+                <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+                <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
+                <ul
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-36 hidden " id="connect">
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Contact</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Newsletter</li>
+                  <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">LinkedIn</li>
+                </ul>
+              </ul>
+            </div>
           </div>
-          <div class="flex items-center justify-center gap-2 text-sm  font-semibold">
+          <div class="lg:flex hidden items-center justify-center gap-2  text-sm  font-semibold">
             <button
               class="px-4 py-2 border-2 border-White rounded-full hover:rounded-full hover:text-Lightred hover:bg-White">Login</button>
             <button
               class="px-4 py-2 border-2 border-White rounded-full  hover:rounded-full hover:text-Lightred hover:bg-White">Sign
               up</button>
           </div>
+          <img src="../public/images/icon-hamburger.svg" alt="icon-hamburger" class="block lg:hidden">
         </nav>
         <article class=" flex flex-col items-center justify-center gap-8 w-full h-full">
           <h1 class=" text-5xl font-Overpass font-semibold"> A modern publishing platform</h1>
@@ -93,7 +99,7 @@
     </main>
   </div>
 </body>
-
+<script src="./index.js"></script>
 </html>
 
 <!-- 
