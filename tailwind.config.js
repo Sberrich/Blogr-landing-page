@@ -6,13 +6,11 @@ module.exports = {
       colors: {
 
         // Primary
-
         Lightred: 'hsl(356, 100%, 66%)',
         Verylightred: 'hsl(355, 100%, 74%)',
         Verydarkblue: 'hsl(208, 49%, 24%)',
 
         //Neutral
-
         White: 'hsl(0, 0%, 100%)',
         Grayishblue: 'hsl(240, 2%, 79%)',
         Verydarkgrayishblue: 'hsl(207, 13%, 34%)',
@@ -20,15 +18,20 @@ module.exports = {
 
         // ### Gradient
         // Background gradient Intro/ CTA mobile nav:
-
-        Verylightred: 'hsl(13, 100%, 72%)',
+        Verylightred2: 'hsl(13, 100%, 72%)',
         Lightred: 'hsl(353, 100%, 62%)',
 
         // Background gradient body:
-
         Verydarkgrayblue: 'hsl(237, 17 %, 21 %)',
         Verydarkdesaturatedblue: 'hsl(237, 23 %, 32 %)',
-      }
+      },
+      fontFamily:{
+        Overpass:['Overpass','sans-serif'],
+        Ubuntu:['Ubuntu','sans-serif'],
+      },
+      backgroundImage: {
+        'url': "url('../public/images/bg-pattern-intro-desktop.svg')",
+      },
     },
   },
   plugins: [],

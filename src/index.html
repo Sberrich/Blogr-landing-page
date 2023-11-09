@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="../public/images/favicon-32x32.png">
   <link rel="stylesheet" href="../public/output.css">
   <title>Blogr</title>
 </head>
-<body class="">
 
+<body>
+  <!-- app container -->
+  <div class=" bg-White h-screen w-screen">
+    <!-- main container -->
+    <main class="flex flex-col items-start justify-between w-full h-full font-Ubuntu">
+
+      <!-- section one contain navbar and titles and 2 buttons -->
+      <section
+        class="flex flex-col items-center justify-between gap-4 bg-url bg-center bg-Lightred rounded-bl-3xl w-full h-[40%] text-White px-40">
+   
+        <nav class="flex items-center justify-between gap-10 p-8 w-full relative ">
+          <!-- lists -->
+          <div class="flex items-center justify-center gap-4 ">
+            <img src="../public/images/logo.svg" alt="logo" class="mr-20">
+
+            <!-- Product lists -->
+            <ul class="flex items-center justify-center gap-2">
+              <span class="text-sm font-semibold">Product</span>
+              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
+              <ul class="hidden">
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </ul>
+
+            <!-- Company -->
+            <ul class="flex items-center justify-center gap-2">
+              <span class="text-sm font-semibold">Company</span>
+              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
+              <ul class="hidden">
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+
+            </ul>
+
+            <!-- Connect -->
+            <ul class="flex items-center justify-center gap-2">
+              <span class="text-sm font-semibold">Connect</span>
+              <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
+              <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden">
+              <ul class="hidden">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </ul>
+
+          </div>
+          <div class="flex items-center justify-center gap-2 text-sm  font-semibold">
+            <button
+              class="px-4 py-2 border-2 border-White rounded-full hover:rounded-full hover:text-Lightred hover:bg-White">Login</button>
+            <button
+              class="px-4 py-2 border-2 border-White rounded-full  hover:rounded-full hover:text-Lightred hover:bg-White">Sign
+              up</button>
+          </div>
+        </nav>
+        <article class=" flex flex-col items-center justify-center gap-8 w-full h-full">
+          <h1 class=" text-5xl font-Overpass font-semibold"> A modern publishing platform</h1>
+          <p class="text-sm opacity-90"> Grow your audience and build your online brand</p>
+          <!-- Buttons -->
+          <div class="flex items-center justify-center gap-2 font-semibold">
+            <button
+              class="px-4 py-2 border-2 border-White rounded-full hover:rounded-full hover:text-Lightred hover:bg-White">Start
+              for Free</button>
+            <button
+              class="px-4 py-2 border-2 border-White rounded-full hover:rounded-full hover:text-Lightred hover:bg-White">Learn
+              More</button>
+          </div>
+        </article>
+      </section>
+
+
+    </main>
+  </div>
 </body>
+
 </html>
 
 <!-- 
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More`
-
   Designed for the future
 
   Introducing an extensible editor
