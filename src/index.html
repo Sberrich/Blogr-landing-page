@@ -14,11 +14,11 @@
   <!-- app container -->
   <div class=" bg-White h-screen w-screen">
     <!-- main container -->
-    <main class="flex flex-col items-start justify-between w-full h-full font-Ubuntu">
+    <main class="flex flex-col items-center justify-start w-full h-full font-Ubuntu">
 
       <!-- section one contain navbar and titles and 2 buttons -->
       <section
-        class="flex flex-col items-start justify-between gap-4 bg-url bg-center bg-Lightred rounded-bl-3xl w-full h-[40%] text-White px-40">
+        class="flex flex-col items-center justify-center gap-4 bg-url bg-center bg-Lightred rounded-bl-3xl w-full h-auto text-White px-40 pb-20">
         <nav class="flex items-center justify-between  p-8 w-full relative">
           <!-- lists -->
           <div class="flex items-center justify-center gap-4 ">
@@ -33,7 +33,8 @@
                 <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
                 <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
                 <ul
-                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 mr-20  hidden " id="products">
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 mr-20  hidden "
+                  id="products">
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer ">Overview</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Pricing</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Marketplace</li>
@@ -48,7 +49,8 @@
                 <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
                 <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
                 <ul
-                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-10 hidden " id="company">
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-10 hidden "
+                  id="company">
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">About</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Team</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Blog</li>
@@ -63,7 +65,8 @@
                 <img src="../public/images/icon-arrow-light.svg" alt="icon-arrow-light">
                 <!-- <img src="../public/images/icon-arrow-dark.svg" alt="icon-arrow-dark" class="hidden"> -->
                 <ul
-                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-36 hidden " id="connect">
+                  class="flex flex-col items-start justify-between gap-2 rounded-md shadow-2xl shadow-Lightred text-Verydarkgrayishblue bg-White p-8 absolute top-20 ml-36 hidden "
+                  id="connect">
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Contact</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">Newsletter</li>
                   <li class="hover:text-Verydarkblackblue hover:font-bold cursor-pointer">LinkedIn</li>
@@ -95,25 +98,61 @@
         </article>
       </section>
 
+      <!-- section tow Designed for the future -->
+      <section class="flex flex-col items-center justify-center bg-White w-full text-White p-8">
+        <article class="text-Verydarkblackblue p-8 flex flex-col items-center justify-between ">
+          <h1 class="text-4xl font-Overpass font-bold text-Verydarkblue">Designed for the future</h1>
+
+          <div class="text-Verydarkgrayishblue flex items-center justify-center">
+
+            <div class=" flex flex-col items-start justify-center p-8 ml-12 gap-8 w-1/2 ">
+
+              <aside>
+                <h2 class="text-2xl font-Overpass font-bold text-Verydarkblue">Introducing an extensible editor</h2>
+                <p class="text-xl text-Verydarkgrayishblue font-Overpass font-medium text-start py-8"> Blogr features an
+                  exceedingly intuitive interface which lets you focus on one thing: creating content. The editor
+                  supports management of multiple blogs and allows easy manipulation of embeds such as images, videos,
+                  and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change
+                  the looks of a blog.
+                </p>
+              </aside>
+              <aside class="py-8">
+                <h2 class="text-2xl font-Overpass font-bold text-Verydarkblue">Robust content management</h2>
+                <p class="text-xl text-Verydarkgrayishblue font-Overpass font-medium text-start py-8"> Flexible content
+                  management enables users to easily move through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+              </aside>
+            </div>
+            <div>
+              <img src="../public/images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- section 3 State of Art -->
+      <section
+        class="flex flex-col items-start justify-center gap-4 bg-url2 bg-left  bg-no-repeat bg-Verydarkblue rounded-bl-3xl w-full h-[30%] text-White px-40">
+
+        <div class="flex items-center justify-between gap-8 font-Overpass w-[80%]">
+
+          <img src="../public/images/illustration-phones.svg" alt="phones">
+          <div class="p-16 flex flex-col items-start justify-between gap-4">
+            <h1 class="text-4xl font-bold">  State of the Art Infrastructure</h1>
+            <p class="opacity-70">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          </div>
+        </div>
+     
+      </section>
 
     </main>
   </div>
 </body>
 <script src="./index.js"></script>
+
 </html>
 
 <!-- 
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
 
   State of the Art Infrastructure
   With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 

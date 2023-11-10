@@ -25,12 +25,13 @@ module.exports = {
         Verydarkgrayblue: 'hsl(237, 17 %, 21 %)',
         Verydarkdesaturatedblue: 'hsl(237, 23 %, 32 %)',
       },
-      fontFamily:{
-        Overpass:['Overpass','sans-serif'],
-        Ubuntu:['Ubuntu','sans-serif'],
+      fontFamily: {
+        Overpass: ['Overpass', 'sans-serif'],
+        Ubuntu: ['Ubuntu', 'sans-serif'],
       },
       backgroundImage: {
         'url': "url('../public/images/bg-pattern-intro-desktop.svg')",
+        'url2': "url('../public/images/bg-pattern-circles.svg')",
       },
     },
   },
